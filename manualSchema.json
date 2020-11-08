@@ -1,0 +1,505 @@
+{
+  "schema": {
+    "collections": [
+      {
+        "id": 4,
+        "name": "Herbario"
+      },
+      {
+        "id": 32770,
+        "name": "Artrópodos"
+      },
+      {
+        "id": 98305,
+        "name": "Mamíferos"
+      },
+      {
+        "id": 65537,
+        "name": "Aves (Pieles y Esqueletos)"
+      },
+      {
+        "id": 131072,
+        "name": "Aves (Huevos y Nidos)"
+      }
+    ],
+    "fields": [
+      {
+        "fieldName": "id",
+        "label": "ID",
+        "fieldType": "string",
+        "collections": []
+      },
+      {
+        "fieldName": "numero_mncr",
+        "label": "Número MNCR",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "numero_catalogo",
+        "label": "Número de catálogo",
+        "fieldType": "int",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "catalogo_anterior",
+        "label": "Catalogo anterior",
+        "fieldType": "int",
+        "collections": [32770, 65537, 131072]
+      },
+      {
+        "fieldName": "reino",
+        "label": "Reino",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "division_filo",
+        "label": "División/Filo",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "clase",
+        "label": "Clase",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "orden",
+        "label": "Orden",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "familia",
+        "label": "Familia",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "subfamilia",
+        "label": "Subfamilia",
+        "fieldType": "string",
+        "collections": [32770]
+      },
+      {
+        "fieldName": "tribu",
+        "label": "Tribu",
+        "fieldType": "string",
+        "collections": [32770]
+      },
+      {
+        "fieldName": "genero",
+        "label": "Género",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "especie",
+        "label": "Especie",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "subespecie",
+        "label": "Subespecie",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "variedad",
+        "label": "Variedad",
+        "fieldType": "string",
+        "collections": [4]
+      },
+      {
+        "fieldName": "forma",
+        "label": "Forma",
+        "fieldType": "string",
+        "collections": [4]
+      },
+      {
+        "fieldName": "tipo_identificacion",
+        "label": "Tipo de identificación",
+        "fieldType": "select",
+        "options": [
+          { "value": "cf.", "label": "cf." },
+          { "value": "aff.", "label": "aff." },
+          {
+            "value": "Sensu lato",
+            "label": "Sensu lato"
+          },
+          { "value": "Sensu stricto", "label": "Sensu stricto" }
+        ],
+        "collections": [4]
+      },
+      {
+        "fieldName": "rango_taxonomico",
+        "label": "Rango taxonómico",
+        "fieldType": "select",
+        "options": [
+          { "value": "Reino", "label": "Reino" },
+          { "value": "Subdivisión", "label": "Subdivisión" },
+          {
+            "value": "Clase",
+            "label": "Clase"
+          },
+          { "value": "Subclase", "label": "Subclase" },
+          { "value": "Orden", "label": "Orden" },
+          {
+            "value": "Suborden",
+            "label": "Suborden"
+          },
+          { "value": "Familia", "label": "Familia" },
+          { "value": "Subfamilia", "label": "Subfamilia" },
+          { "value": "Tribu", "label": "Tribu" },
+          { "value": "Subtribu", "label": "Subtribu" },
+          {
+            "value": "Genero",
+            "label": "Genero"
+          },
+          { "value": "Subgenero", "label": "Subgenero" },
+          { "value": "Seccion", "label": "Seccion" },
+          { "value": "Subseccion", "label": "Subseccion" },
+          { "value": "Especie", "label": "Especie" },
+          { "value": "Subespecie", "label": "Subespecie" },
+          { "value": "Variedad", "label": "Variedad" },
+          { "value": "Forma", "label": "Forma" }
+        ],
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "autor",
+        "label": "Autor",
+        "fieldType": "string",
+        "operatorType": "contains_any",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "recolector_principal",
+        "label": "Recolector principal",
+        "fieldType": "string",
+        "operatorType": "contains_any",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "numero_de_recolecta",
+        "label": "Número de recolecta",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "recolectores_acompanantes",
+        "label": "Recolectores acompañantes",
+        "fieldType": "string",
+        "operatorType": "contains_any",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "fecha_inicio_recoleccion",
+        "label": "Fecha inicio recolección",
+        "fieldType": "date",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "fecha_final_recoleccion",
+        "label": "Fecha final recolección",
+        "fieldType": "date",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "identificador",
+        "label": "Identificador",
+        "operatorType": "contains_any",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "fecha_de_identificacion",
+        "label": "Fecha de identificación",
+        "fieldType": "date",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "pais",
+        "label": "País",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "provincia",
+        "label": "Provincia",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "canton",
+        "label": "Cantón",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "distrito",
+        "label": "Distrito",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "latitud_decimal",
+        "label": "Latitud decimal",
+        "fieldType": "int",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "longitud_decimal",
+        "label": "Longitud decimal",
+        "fieldType": "int",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "nombre_de_localidad",
+        "label": "Nombre de Localidad",
+        "fieldType": "string",
+        "collections": [4]
+      },
+      {
+        "fieldName": "descripcion_de_localidad",
+        "label": "Descripción de localidad",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "area_conservacion",
+        "label": "Área conservación",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "area_protegida",
+        "label": "Area protegida",
+        "fieldType": "string",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "vertiente",
+        "label": "Vertiente",
+        "fieldType": "select",
+        "options": [
+          { "value": "Caribe", "label": "Caribe" },
+          { "value": "Pacífico", "label": "Pacífico" },
+          {
+            "value": "Indefinido",
+            "label": "Indefinido"
+          }
+        ],
+        "collections": [4]
+      },
+      {
+        "fieldName": "ecosistema",
+        "label": "Ecosistema",
+        "fieldType": "string",
+        "collections": []
+      },
+      {
+        "fieldName": "elevacion_minima",
+        "label": "Elevación mímina (m)",
+        "fieldType": "int",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "elevacion_maxima",
+        "label": "Elevación máxima (m)",
+        "fieldType": "int",
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "notas_campo",
+        "label": "Notas de campo",
+        "fieldType": "string",
+        "collections": [4]
+      },
+      {
+        "fieldName": "fenologia",
+        "label": "Fenología",
+        "fieldType": "select",
+        "options": [
+          { "value": "Botones florales", "label": "Botones florales" },
+          { "value": "Conos", "label": "Conos" },
+          {
+            "value": "Esporófitos",
+            "label": "Esporófitos"
+          },
+          { "value": "Estéril", "label": "Estéril" },
+          { "value": "Estróbilos", "label": "Estróbilos" },
+          {
+            "value": "Flor",
+            "label": "Flor"
+          },
+          { "value": "Flor y Fruto", "label": "Flor y Fruto" },
+          { "value": "Mixto", "label": "Mixto" },
+          { "value": "Soros", "label": "Soros" }
+        ],
+        "collections": [4]
+      },
+      {
+        "fieldName": "tipo_especimen",
+        "label": "Tipo de espécimen",
+        "fieldType": "select",
+        "options": [
+          { "value": "Externo", "label": "Externo" },
+          { "value": "Múltiples individuos", "label": "Múltiples individuos" },
+          {
+            "value": "Observación",
+            "label": "Observación"
+          },
+          { "value": "Organismo", "label": "Organismo" },
+          { "value": "Organismo en cópula", "label": "Organismo en cópula" },
+          {
+            "value": "Organismo y genitalia",
+            "label": "Organismo y genitalia"
+          },
+          { "value": "Partes de organismo", "label": "Partes de organismo" },
+          { "value": "Esqueletos", "label": "Esqueletos" },
+          { "value": "Pieles", "label": "Pieles" },
+          { "value": "Piel y Esqueleto", "label": "Piel y Esqueleto" },
+          { "value": "Huevos", "label": "Huevos" },
+          { "value": "Nidos", "label": "Nidos" }
+        ],
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "tipo_nomenclatural",
+        "label": "Tipo nomenclatural",
+        "fieldType": "select",
+        "options": [
+          { "value": "Allotipo", "label": "Allotipo" },
+          { "value": "Clonotipo", "label": "Clonotipo" },
+          {
+            "value": "Fototipo",
+            "label": "Fototipo"
+          },
+          { "value": "Holotipo", "label": "Holotipo" },
+          { "value": "Isoepitipo", "label": "Isoepitipo" },
+          {
+            "value": "Isolectotipo",
+            "label": "Isolectotipo"
+          },
+          { "value": "Isoneotipo", "label": "Isoneotipo" },
+          { "value": "Isoparalectotipo", "label": "Isoparalectotipo" },
+          { "value": "Isoparatipo", "label": "Isoparatipo" },
+          { "value": "Isosintipo", "label": "Isosintipo" },
+          {
+            "value": "Isotipo",
+            "label": "Isotipo"
+          },
+          { "value": "Kleptotipo", "label": "Kleptotipo" },
+          {
+            "value": "Lectoparatipo",
+            "label": "Lectoparatipo"
+          },
+          { "value": "Lectotipo", "label": "Lectotipo" },
+          { "value": "Neotipo", "label": "Neotipo" },
+          {
+            "value": "Paralectotipo",
+            "label": "Paralectotipo"
+          },
+          { "value": "Paratipo", "label": "Paratipo" },
+          { "value": "Sintipo", "label": "Sintipo" },
+          { "value": "Tipo", "label": "Tipo" },
+          { "value": "Topotipo", "label": "Topotipo" },
+          {
+            "value": "Xerotipo",
+            "label": "Xerotipo"
+          }
+        ],
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "tipo_registro",
+        "label": "Tipo de registro",
+        "fieldType": "string",
+        "collections": [98305, 65537, 131072]
+      },
+      {
+        "fieldName": "no_duplicados",
+        "label": "No. Duplicados",
+        "fieldType": "int",
+        "collections": [4]
+      },
+      {
+        "fieldName": "categoria_especimen",
+        "label": "Categoría espécimen",
+        "fieldType": "string",
+        "collections": [32770]
+      },
+      {
+        "fieldName": "origen_especimen",
+        "label": "Origen espécimen",
+        "fieldType": "string",
+        "collections": [32770]
+      },
+      {
+        "fieldName": "etapa_vida",
+        "label": "Etapa Vida",
+        "fieldType": "string",
+        "collections": [32770]
+      },
+      {
+        "fieldName": "sexo",
+        "label": "Sexo",
+        "fieldType": "string",
+        "collections": [32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "metodo_recolecta",
+        "label": "Método de recolecta",
+        "fieldType": "string",
+        "collections": [32770]
+      },
+      {
+        "fieldName": "coleccion",
+        "label": "Colección",
+        "fieldType": "select",
+        "options": [
+          { "value": "Aves", "label": "Aves" },
+          { "value": "Herbario", "label": "Herbario" },
+          {
+            "value": "Insectos",
+            "label": "Insectos"
+          },
+          { "value": "Mamíferos", "label": "Mamíferos" }
+        ],
+        "collections": [4, 32770, 98305, 65537, 131072]
+      },
+      {
+        "fieldName": "subcoleccion",
+        "label": "Subcolección",
+        "fieldType": "select",
+        "options": [
+          { "value": "Algas", "label": "Algas" },
+          { "value": "Arachnida", "label": "Arachnida" },
+          {
+            "value": "Ephemeroptera",
+            "label": "Ephemeroptera"
+          },
+          { "value": "Hongos", "label": "Hongos" },
+          { "value": "Insecta", "label": "Insecta" },
+          {
+            "value": "Líquenes",
+            "label": "Líquenes"
+          },
+          { "value": "Miriapoda", "label": "Miriapoda" },
+          { "value": "Nematocera", "label": "Nematocera" },
+          { "value": "Nematoda", "label": "Nematoda" },
+          { "value": "Onychophora", "label": "Onychophora" },
+          {
+            "value": "Plantas",
+            "label": "Plantas"
+          }
+        ],
+        "collections": [4, 32770, 98305, 65537, 131072]
+      }
+    ]
+  }
+}
