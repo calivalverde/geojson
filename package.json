@@ -1,0 +1,22 @@
+{
+  "name": "geojson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calivalverde/geojson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calivalverde/geojson/issues"
+  },
+  "homepage": "https://github.com/calivalverde/geojson#readme",
+  "dependencies": {
+    "minify-json": "^1.0.0"
+  }
+}
